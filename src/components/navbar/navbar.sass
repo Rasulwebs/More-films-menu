@@ -1,0 +1,42 @@
+@use '../../sass/variables.sass'
+@use '../../sass/mixins.sass'
+
+#navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 1rem 2rem
+  background-color: variables.$navbar-bg
+  h2
+    display: flex
+    align-items: center
+    gap: variables.$small-gap
+  a
+    display: flex
+    align-items: center
+    gap: variables.$small-gap
+
+.nav-form
+  display: flex
+  gap: variables.$small-gap
+
+.nav-input
+  padding: 0.2rem 0.8rem
+  border-radius: 4px
+  border: none
+
+.nav-btn
+  background-color: variables.$color-ligth-red
+  border: 2px solid variables.$color-ligth-red
+  border-radius: 4px
+  color: variables.$color-black
+  padding: 0.3rem
+  font-size: variables.$font-medium
+  display: flex
+  align-items: center
+  cursor: pointer
+
+.wrapper
+  @include mixins.flex-center
+  gap: 1rem
+

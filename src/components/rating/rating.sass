@@ -1,0 +1,18 @@
+@use '../../sass/variables'
+
+.rate-me 
+    padding: 0.5rem 1rem
+    border-radius: 0.3rem
+    background-color: variables.$transparent-bg
+    border: 3px solid variables.$color-ligth-red
+    color: variables.$color-ligth-red
+    transition: all 0.2s ease-in-out
+    &:hover 
+        background-color: variables.$color-ligth-red
+        color: variables.$color-black
+
+.wrapper-rating 
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 1rem

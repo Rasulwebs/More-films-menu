@@ -1,0 +1,51 @@
+@use './variables'
+
+.container 
+  .title
+    color: variables.$color-white
+    font-size: variables.$font-large
+    margin-top: 3rem
+    padding-left: 1.3rem
+    .query-text
+      color: variables.$color-ligth-red
+
+.motion-container
+  overflow: hidden
+  cursor: grab
+  width: 100%
+
+.movies-container
+  display: flex
+  padding: 1rem
+  width: 100%
+  div  
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    color: variables.$color-white
+    margin-bottom: 2.5rem
+    background-color: variables.$scrollbar-bg
+    padding: 1rem
+    margin: 5px
+    img
+      width: 200px
+      margin-bottom: 0.8rem
+    p
+      margin-bottom: 0.8rem
+      font-weight: lighter
+      font-size: variables.$font-petit
+      margin-top: 0.2rem
+    h2
+      font-weight: lighter
+      font-size: variables.$font-small
+    a
+      background-color: variables.$color-ligth-red
+      border: 2px solid variables.$color-ligth-red
+      border-radius: 4px
+      color: variables.$color-black
+      padding: 0.5rem
+      text-align: center
+      font-weight: bold
+      &:hover
+        background-color: variables.$transparent-bg
+        color: variables.$color-dark-red
